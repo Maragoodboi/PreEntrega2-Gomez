@@ -1,0 +1,418 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  display: grid;
+  background-image: url(https://images3.alphacoders.com/109/1095798.jpg);
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  margin-right: 5%;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 100px;
+  font-family: "Poppins", sans-serif;
+  color: antiquewhite;
+  list-style-type: none;
+}
+
+.nav-item {
+  font-family: "Poppins", sans-serif;
+  color: antiquewhite;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  opacity: 0.7;
+}
+
+/* MAIN */
+
+main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: stretch;
+  align-items: center;
+  justify-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding-bottom: 10%;
+  text-align: center;
+  padding-top: 10%;
+}
+
+.main-2 {
+  display: grid;
+  justify-self: center;
+  grid-column-end: 3;
+}
+
+.main-nos,
+.main-gal,
+.main-exp,
+.main-con {
+  padding-top: 0;
+}
+
+img {
+  vertical-align: bottom;
+  opacity: 1;
+}
+
+a:link,
+a:visited,
+a:active {
+  color: antiquewhite;
+  text-decoration: none;
+}
+a:link:hover {
+  opacity: 0.8;
+}
+
+.main__title,
+.second__title,
+.second__title a,
+.label__item,
+.parrafo,
+.section-feedback,
+.title-inside {
+  font-family: "Poppins", sans-serif;
+  color: antiquewhite;
+  font-weight: 300;
+}
+
+.main-title-i {
+  font-family: "Poppins", sans-serif;
+  color: antiquewhite;
+  font-weight: 600;
+}
+
+/* FEEDBACK SECTION */
+
+.section-feedback {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  padding: 2%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.parrafo-fb {
+  display: grid;
+  font-family: "Poppins", sans-serif;
+  color: rgb(231, 220, 220);
+  background-color: rgba(86, 64, 110, 0.5);
+  padding: 1%;
+  font-style: oblique;
+  text-align: center;
+}
+
+.feedback1 {
+  display: grid;
+  font-style: italic;
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+
+.feedback2 {
+  display: grid;
+  font-style: italic;
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+
+.feedback3 {
+  display: grid;
+  font-style: italic;
+  grid-column-start: 2;
+  grid-row-start: 3;
+}
+
+.feedback4 {
+  display: grid;
+  font-style: italic;
+  grid-column-start: 1;
+  grid-row-start: 4;
+}
+
+.h3-fb {
+  text-align: center;
+  font-weight: 300;
+}
+
+/* FOOTER */
+
+.fa-brands {
+  color: rgb(214, 19, 204, 1);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 2%;
+  align-items: center;
+  min-height: 50px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  width: 100%;
+  bottom: 0px;
+  font-family: "Poppins", sans-serif;
+  color: rgb(255, 255, 255);
+  background-color: black;
+  opacity: 0.9;
+}
+
+/* FORMULARIO CONTACTO */
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding-bottom: 50px;
+  flex: 1;
+}
+
+form {
+  margin: 1%;
+}
+
+form fieldset {
+  display: flex;
+  flex-direction: column;
+  padding: 10%;
+}
+
+
+
+.terminos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: antiquewhite;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 5%;
+}
+
+.select__form {
+  font-family: "Poppins", sans-serif;
+  margin: 10%;
+}
+
+textarea {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.botones__form {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+/* EXPEDICIONES */
+
+.main-exp {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: stretch;
+  align-items: center;
+  justify-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding-bottom: 10%;
+  text-align: center;
+  padding-top: 5%;
+}
+
+.div-exp {
+  background-color: rgba(0, 0, 0, 0.7);
+  margin-top: 20px;
+  padding: 15px;
+  border: white;
+  border-radius: 10px;
+}
+
+.parrafo-exp {
+  font-family: "Poppins", sans-serif;
+  color: antiquewhite;
+}
+
+.list-exp {
+  font-family: "Poppins", sans-serif;
+  color: antiquewhite;
+  list-style-type: none;
+  font-weight: 300;
+}
+
+.button {
+  padding: 1px;
+  margin: 20px;
+  font-family: "Poppins", sans-serif;
+  color: rgb(61, 0, 102);
+}
+
+/*NOSOTROS*/
+
+.main-nos {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding-bottom: 5%;
+  text-align: center;
+  padding-top: 5%;
+}
+
+.main__title-n {
+  font-family: "Poppins", sans-serif;
+  color: antiquewhite;
+}
+.parrafo-nos {
+  font-family: "Poppins", sans-serif;
+  color: rgb(255, 255, 255);
+  border-style: double;
+  padding: 1%;
+  margin-bottom: 3%;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+}
+
+.section-feedback-nos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(8, 1fr);
+  padding: 2%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.parrafo-fb-nos {
+  display: grid;
+  font-family: "Poppins", sans-serif;
+  color: rgb(255, 255, 255);
+
+  padding: 1%;
+  font-weight: 500;
+  text-align: center;
+}
+
+.h3-fb-nos {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: antiquewhite;
+}
+
+.fa {
+  color: yellow;
+  align-content: center;
+}
+
+.feedback5 {
+  display: grid;
+  font-style: italic;
+  grid-column-start: 2;
+  grid-row-start: 5;
+}
+
+.feedback6 {
+  display: grid;
+  font-style: italic;
+  grid-column-start: 1;
+  grid-row-start: 6;
+}
+
+.feedback7 {
+  display: grid;
+  font-style: italic;
+  grid-column-start: 2;
+  grid-row-start: 7;
+}
+
+.feedback8 {
+  display: grid;
+  font-style: italic;
+  grid-column-start: 1;
+  grid-row-start: 8;
+}
+
+.main-title-con {
+  padding: 1%;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: antiquewhite;
+  font-weight: 300;
+}
+
+
+.exp-latitravel {
+  padding: 2%;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: antiquewhite;
+  font-weight: 600;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/*GALERIA*/
+
+.main-gal {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  padding: 2%;
+}
+
+.bsas-gal {
+  overflow: hidden;
+}
+
+/*media queries*/
+
+@media (max-width: 800px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(97, 44, 141);
+    background-image: none;
+    
+  }
+
+  header {
+    display: grid;
+    align-items: center;
+  }
+
+  .header-logo {
+    display: flex;
+    align-self: center;
+  }
+
+  main {
+    display: grid;
+    align-items: center;
+  }
+}
